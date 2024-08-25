@@ -1,0 +1,13 @@
+#Check if a number is palindrome
+def is_num_palindrome(num: int):
+  rev_num=0
+  given_no=num
+  while num > 0:
+    dig=num%10
+    rev_num=(rev_num*10)+dig
+    num=num//10
+  if rev_num == given_no:
+    return True
+  return False
+
+print(is_num_palindrome(5))
